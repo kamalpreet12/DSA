@@ -7,16 +7,21 @@ struct node
     struct node *next;
 };
 
-void display(struct node *head)  
+void display(struct node *ptr , struct node *p) // there is two ponters one start from beginning and one start from ending  
 {  
-    struct node *ptr;  
-    printf("\n printing values...\n");  
-    ptr = head;  
-    while(ptr != NULL)  
-    {  
-        printf("%d\n",ptr->data);  
-        ptr=ptr->next;  
-    }  
+    while (ptr!=NULL)
+    {
+       printf("Elemets in forward direction are %d \n",ptr->data);
+       ptr = ptr->next;
+    }
+
+    while (p!=NULL)
+    {
+        printf("Elemets in backward direction are %d \n",p->data);
+       p = p->prev;
+    }
+    
+     
 }
 int main()
 {
@@ -40,7 +45,7 @@ int main()
     third->next = NULL;
     third->prev = second;
    
-    display(head);
+    display(head , third);
 
    
     return 0;

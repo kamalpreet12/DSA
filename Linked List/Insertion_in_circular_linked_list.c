@@ -24,7 +24,7 @@ struct Node *insertionatFirst(struct Node *head, int data)
     ptr = (struct Node *)malloc(sizeof(struct Node));
     ptr->data = data;
     struct Node *p = head->next;
-    while (p->next!=head)
+    while (p->next != head)
     {
         p = p->next;
     }
@@ -52,7 +52,7 @@ int main()
     third->next = head;
     printf("Circular linked list before insertion is \n");
     display(head);
-    head = insertionatFirst(head , 40);
+    head = insertionatFirst(head, 40);
     printf("Circular linked list after insertion is \n");
     display(head);
     return 0;

@@ -81,10 +81,10 @@ int main(){
    third->next = NULL;
 
    printlist(head);
-//    head = insertionfirst(head, 45);
+   head = insertionfirst(head, 45);
 //    head = insertatindex(head , 45 , 2);
 //    head = insertionatend(head , 45);
-      head = insertionafterNode(second,head , 45);
+    //   head = insertionafterNode(second,head , 45);
    printlist(head);
     return 0;
 }

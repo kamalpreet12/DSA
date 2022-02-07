@@ -18,7 +18,7 @@ void setvalues( struct array * n ){
     int a;
     for (int i = 0; i < n->array_sizeused; i++)
     {
-        printf("Enter the elements of array %d " , i);
+        printf("Enter the elements of array %d " , i+1);
         scanf("%d" , &a);
         (n->ptr)[i] = a;
     }
